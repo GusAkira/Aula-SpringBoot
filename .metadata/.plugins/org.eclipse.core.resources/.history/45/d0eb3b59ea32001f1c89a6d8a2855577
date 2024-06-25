@@ -34,7 +34,7 @@ public class UserController {
 	}
 	
 	@PostMapping
-	public User insert(@RequestBody User user) {
+	public User finsert(@RequestBody User user) {
 		User result = repository.save(null);
 		return result;
 	}
